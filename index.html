@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa" dir="rtl">
 
 <head>
     <meta charset="UTF-8">
@@ -10,6 +10,158 @@
 </head>
 
 <body>
+    <div class="container">
+        <header class="header">
+            <h3>راهنما خانه</h3>
+
+            <nav>
+                <a href="#chapters" class="nav-link">فصل‌ها</a>
+                <a href="#request-form" class="nav-link">درخواست راهنما</a>
+            </nav>
+        </header>
+
+        <section class="guide-web">
+            <img src="image.png" alt="">
+            <div class="guide">
+                <h2>راهنمای شروع یادگیری وب</h2>
+                <p class="description">سه فصل کوتاه برای کسی که می‌خواهد ساختار صفحه، ضاهر و ثبت تغییرهای خود را مرور
+                    کند.</p>
+                <div class="boxes">
+                    <div class="box">
+                        <p class="description">زبان</p>
+                        <h3 class="feature">نسخۀ فارسی</h3>
+                    </div>
+                    <div class="box">
+                        <p class="description">حجم</p>
+                        <h3 class="feature">40 صفحه</h3>
+                    </div>
+
+                    <div class="box">
+                        <p class="description">قالب</p>
+                        <h3 class="feature">PDF آموزشی</h3>
+                    </div>
+                </div>
+
+                <div class="notice">
+                    <p class="description">PDF در این تمرین تولید یا ارسال نمی‌شود.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- chapters section -->
+        <section id="chapters">
+            <h2>فصل‌ها</h2>
+            <div class="chapters">
+                <div class="chapter-title">
+                    <span class="badge">01</span>
+                    <h3>1- HTML: ساختار و معنا</h3>
+                </div>
+
+                <div class="chapter-title">
+                    <span class="badge">02</span>
+                    <h3>2- CSS: ظاهر و چیدمان</h3>
+                </div>
+
+                <div class="chapter-title">
+                    <span class="badge">03</span>
+                    <h3>3- GIT:ثبت و مرور تغییرها</h3>
+                </div>
+            </div>
+
+            <div class="about-chapter">
+                <div class="chapter">
+                    <div>
+                        <p class="lesson-No">01</p>
+                        <h3>1- HTML: ساختار و معنا</h3>
+                        <span class="badge-pageNumber">12 صفحه</span>
+                    </div>
+
+                    <p class="description">چطور عنوان‌ها، فهرست‌ها، جدول‌ها و فرم‌هارا طوری کنار هم قرار دهیم که رابطۀ
+                        اطلاعات روشن و صفحه قابل خواندن باشند.</p>
+                </div>
+
+                <div class="chapter">
+                    <div>
+                        <p class="lesson-No">02</p>
+                        <h3>2- CSS: ظاهر و چیدمان</h3>
+                        <span class="badge-pageNumber">18 صفحه</span>
+                    </div>
+
+                    <p class="description">تمرین انتخاب فاصله، اندازۀ منعطف و چیدمان واکنش‌گرا برای متن‌های کوتاه و
+                        بلند، همراه با بررسی رفتار در مرورگر.</p>
+                </div>
+
+                <div class="chapter">
+                    <div>
+                        <p class="lesson-No">03</p>
+                        <h3>3- GIT:ثبت و مرور تغییرها</h3>
+                        <span class="badge-pageNumber">12 صفحه</span>
+                    </div>
+
+                    <p class="description">مرور ثبت مرحلۀ‌های کار و توضیح یک تغییر برای review؛ این فصل معرفی است و
+                        فرمان یا آموزش جدیدی به تمرین اضافه نمی‌کند.</p>
+                </div>
+            </div>
+
+        </section>
+
+    </div>
+    <hr>
+    <div class="form-container" id="request-form">
+        <section class="form-request">
+            <form>
+                <h2 class="form-title">درخواست راهنما</h2>
+
+                <div class="notice">
+                    <p class="description">سطح آشنایی فقط برای شناخت مخاطب است؛ همۀ سطح‌ها همین نسخۀ فارسی را درخواست
+                        می‌کنند.</p>
+                </div>
+
+                <div class="input-label">
+                    <label for="name" class="label">نام <span class="optional">(اختیاری)</span></label>
+                    <input type="text" name="name" id="name">
+                </div>
+
+
+                <div class="input-label">
+                    <label for="email">ایمیل <span class="required">(اجباری)</span></label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+
+
+                <div class="input-label">
+                    <label for="level">سطح آشنایی <span class="required">(اجباری)</span></label>
+                    <select name="level" id="level" required>
+                        <option value="">سطح آشنایی را انتخاب کنید:</option>
+                        <option value="beginner">تازه شروع کرده‌ام</option>
+                        <option value="html-css">HTML/CSS مقدماتی را دیده‌ام</option>
+                        <option value="review">برای مرور می‌خواهم</option>
+                    </select>
+                </div>
+
+
+                <div class="rule">
+                    <input type="checkbox" id="accept" required>
+                    <label for="accept">مایلم راهنما را در ایمیل نمونۀ وارد شده دریافت کنم <span class="required"
+                            id="accept-required">(اجباری)</span></label>
+                </div>
+
+                <button type="submit" class="button">ارسال درخواست آزمایشی</button>
+
+                <hr class="hr-form">
+
+                <div class="contact">
+                    <h3>تماس</h3>
+                    <a href="#" class="contact-link">guide@example.com</a>
+                </div>
+
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p class="description">راهنماخانه - نسخۀ آموزشی</p>
+    </footer>
 
 </body>
 
